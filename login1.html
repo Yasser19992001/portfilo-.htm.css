@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<a href="./index.html">Home page</a>
+    <style>
+        body {
+            background-color: #ccc;
+        }
+
+        #login {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+            width: 400px;
+            margin-top: 20px;
+            border: 2px solid rgb(95, 119, 58);
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        .contact-form input {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            border: #fcfafa solid;
+            background-color: #b8adad;
+
+        }
+
+        input::placeholder {
+            color: black;
+        }
+
+        .contact-form textPath {
+            color: azure;
+        }
+
+        .contact-form button {
+            background: rgb(64, 148, 64);
+            border: 2px solid greenyellow;
+            padding: 10px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .contact-form button:hover {
+            background: darkgreen;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Login Section -->
+    <section id="login">
+        <h2>Login</h2>
+        <form class="contact-form">
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+</body>
+
+</html>

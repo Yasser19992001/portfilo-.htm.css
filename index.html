@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="./style1.css">
+  <style>
+ body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Hide checkbox */
+    #menu-toggle {
+      display: none;
+    }
+
+    /* Default nav (desktop) */
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding: 0;
+    }
+
+    .nav-links li {
+      margin: 0;
+    }
+
+    /* Hamburger hidden by default */
+    .menu-icon {
+      display: none;
+     /* font-size: 24px;*/
+      cursor: pointer;
+      user-select: none;
+    }
+
+    /* ========= MOBILE STYLES ========= */
+    @media (max-width: 390px),(max-width:480px) {
+      /* Show hamburger */
+      .menu-icon {
+        display: inline-block;
+    
+      }
+
+      /* Hide nav links by default */
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      /* Show nav when checkbox checked */
+      #menu-toggle:checked ~ .nav-links {
+        display: flex;
+      }
+    }
+    .logo{
+      display: block;
+    }
+  </style>
+   
+  
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">Portfolio</div>
+
+  <!-- Hidden checkbox -->
+  <input type="checkbox" id="menu-toggle">
+
+  <!-- Hamburger icon (label toggles checkbox) -->
+  <label for="menu-toggle" class="menu-icon">☰</label>
+
+  <!-- Navigation -->
+  <ul class="nav-links">
+    
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+      <li><a href="./blog1.html">Blog</a></li>
+      <li><a href="./login1.html">Login</a></li>
+      <li><a href="./sinup1.html">Signup</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h1>Hello, I'm Yasser YGUOB a Web Developer</h1>
+      <p>
+        I specialize in creating modern, responsive, and user-friendly websites.
+        With a strong passion for coding and design, I bring ideas to life on the web.
+      </p>
+      <a href="#contact">Hire Me</a>
+    </div>
+    <div class="hero-image">
+      <img src="./1755595328557 (1).jpg" alt="My Photo">
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+      <h2>About Me</h2>
+        <p>HTML Skills:
+
+Sentic HTML (using "header", "section", "article", "footer")
+
+Forms & validation
+
+Accessibility (ARIA roles, alt text, labels)
+
+SEO-friendly markup
+
+Media embedding (images, video, audio)
+
+Table structuring & responsive layouts
+
+CSS Skills:
+
+Responsive design with Flexbox & Grid
+
+Styling forms, buttons, and navigation menus
+
+CSS animations & transitions
+
+Pseudo-classes & pseudo-elements (:hover, ::before, ::after)
+
+CSS variables & custom properties
+
+Media queries for mobile-first design
+
+Cross-browser compatibility
+
+Using frameworks (Bootstrap, Tailwind CSS)</p>
+
+            <h2>My Story</h2>
+            <p>My Story (Web Developer)
+
+Hi, I’m Yasser Yaguob, a passionate web developer who loves turning ideas into interactive digital experiences.
+
+My journey began with experimenting in HTML and CSS, where I discovered how lines of code could bring designs to life. What started as curiosity quickly grew into a deep interest in building clean, responsive, and user-friendly websites.
+
+Over time, I expanded my skills to JavaScript and modern tools, learning how to create dynamic features and optimize websites for all devices. I also explored frameworks and responsive design techniques like Flexbox and Grid, which helped me craft layouts that are both functional and beautiful.
+
+Today, I continue to grow as a developer, exploring new technologies and best practices. My goal is to build websites that are not only visually appealing but also accessible, efficient, and impactful.
+
+ Do you want me to make this story more personal (like a narrative about your learning journey), or should I keep it professional and portfolio-ready?</p>
+      
+    
+    </section>
+  <!-- Services Section -->
+  <section  id="services">
+     <h2>Services</h2>
+  <div class="image-container">
+    <img src="./Gemini_Generated_Image_flfcd1flfcd1flfc.png" alt="First Image">
+    <img src="./Gemini_Generated_Image_vatp4svatp4svatp.png" alt="Second Image">
+     </div>
+     <div class="put">
+    <p style="color: black;">
+      I provide a range of web development services including:
+      - Website design & development
+      - Responsive web applications
+      - UI/UX design
+      - Website maintenance & support
+    </p>  </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-item">
+        <img src="./Html.png" alt="HTML">
+        <p>HTML</p>
+      </div>
+      <div class="skill-item">
+        <img src="./icons8-css-24.png" alt="CSS">
+        <p>CSS</p>
+      </div>
+      <div class="skill-item">
+        <img src="./js-.png" alt="JavaScript">
+        <p>JavaScript</p>
+      </div>
+      <div class="skill-item">
+        <img src="./react.png" alt="React">
+        <p>React</p>
+      </div>
+
+    </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="./responsive.jpg" alt="Project 1">
+        <h3>Project One</h3>
+        <p>A responsive website built with HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="project-card">
+        <img src="./ecommers.jpg" alt="Project 2">
+        <h3>Project Two</h3>
+        <p>An e-commerce platform developed with React and Node.js.</p>
+      </div>
+      <div class="project-card">
+        <img src="./personlo.jpg" alt="Project 3">
+        <h3>Project Three</h3>
+        <p>A personal blog website powered by WordPress.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-info">
+      <p><b>Name:</b> Yasser YGUOB</p>
+      <p><b>Email:</b> yasseryagoob15@gmail.com</p>
+      <p><b>Phone:</b> +250 794489035</p>
+      <p><b>Location:</b> KIEGLY, Rawond</p>
+    </div>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+</body>
+
+</html>

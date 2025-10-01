@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive CSS Hamburger Menu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Hide checkbox */
+    #menu-toggle {
+      display: none;
+    }
+
+    /* Default nav (desktop) */
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding: 0;
+    }
+
+    .nav-links li {
+      margin: 0;
+    }
+
+    /* Hamburger hidden by default */
+    .menu-icon {
+      display: none;
+      font-size: 30px;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    /* ========= MOBILE STYLES ========= */
+    @media (max-width: 390px) {
+      /* Show hamburger */
+      .menu-icon {
+        display: inline-block;
+      }
+
+      /* Hide nav links by default */
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      /* Show nav when checkbox checked */
+      #menu-toggle:checked ~ .nav-links {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hidden checkbox -->
+  <input type="checkbox" id="menu-toggle">
+
+  <!-- Hamburger -->
+  <label for="menu-toggle" class="menu-icon">☰</label>
+
+  <!-- Nav Links -->
+  <ul class="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+
+</body>
+</html>
